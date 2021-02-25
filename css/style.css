@@ -1,0 +1,458 @@
+/** Globals **/
+@font-face {
+  font-family: 'PinotGrigio';
+  src: url('../fonts/PinotGrigioModernW00Bold.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  overflow-x: hidden;
+}
+
+.PinotGrigio{
+  font-family: 'PinotGrigio';
+}
+
+a {
+  text-decoration: none;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.green_color {
+  color: #00a38a;
+}
+
+.blue_color {
+  color: #4446fc;
+}
+
+.red_color {
+  color: crimson;
+}
+
+.brown_color {
+  color: #462b2b;
+}
+
+.yellow_color {
+  color: #b2b55a;
+}
+
+.sub {
+  position: relative;
+}
+
+.sub::after {
+  content: "";
+  background-image: linear-gradient(120deg, #b2bb1c 0%, #b2bb1c 100%);
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+
+/**  Menu **/
+.navbar-container {
+  position: relative;
+}
+.navbar-brand img {
+  height: 50px;
+}
+
+.login_button {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  transition: ease 0.5s;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 40px;
+  border-radius: 30px;
+  transition: ease 0.5s;
+
+}
+
+.login_button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.img_login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.degradado {
+  background: linear-gradient(to bottom, #00bf7299, transparent, #a8eb1299),
+    url("../img/Arbol-cacao.jpg") no-repeat;
+  height: 480px;
+  width: 720px;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.poda h1 {
+  font-weight: 700;
+}
+
+.cacao-button {
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  margin-top: 10px;
+  background-color: #462b2b;
+  color: #ffffff;
+  padding: 10px 45px;
+  border-radius: 30px;
+  transition: ease 0.5s;
+  width: 200px;
+}
+
+.cacao-button:hover {
+  background-color: #b2b55a;
+  color: #ffffff;
+}
+
+/** Course Section **/
+.course_section {
+  background-color: #f6f8fa;
+}
+
+.title_course {
+  position: relative;
+  z-index: 2;
+}
+
+.title_course h1 {
+  font-weight: 700;
+}
+
+.sub_course {
+  position: relative;
+}
+
+.sub_course::after {
+  content: "";
+  background-color: #b5c2da;
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  z-index: -1;
+}
+
+.register-button {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #00a38a;
+  color: #ffffff;
+  padding: 10px 40px;
+  border-radius: 30px;
+  transition: ease 0.5s;
+  width: 190px;
+}
+
+/** Testimonial **/
+
+.slider_title {
+  position: relative;
+}
+
+.slider_title h1 {
+  font-weight: 700;
+}
+
+.slider_title i {
+  font-size: 7rem;
+  position: absolute;
+  color: #acb628;
+  top: -25px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.testimonial_card {
+  min-width: 340px;
+  margin: 1rem;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.24);
+}
+
+.testimonial_title {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+}
+
+.testimonial_title > img {
+  width: 70px !important;
+  height: 70px !important;
+  border-radius: 50%;
+}
+
+.user_info {
+  padding-top: 0.5 rem;
+  padding-left: 2rem;
+}
+
+.user_info > p {
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+.user_info > h4,
+p {
+  margin: 0;
+}
+
+.testimonial_body {
+  padding-top: 20px;
+}
+
+.testimonial_body p {
+  position: relative;
+}
+.testimonial_body p::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  content: "\f10d";
+  font-size: 8px;
+  position: absolute;
+  left: -14px;
+  top: 2px;
+}
+
+.control_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease 0.5s;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0.5rem;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.24);
+}
+
+.control_button:hover {
+  background-color: #00a38a;
+}
+
+/** Footer **/
+
+.footer_section .container {
+  border-top: 2px solid #b7bfe3;
+}
+
+.logos {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img {
+  height: 50px;
+  margin-left: 20px;
+}
+
+.social_media {
+  text-align: center;
+}
+
+.social_media > a {
+  text-decoration: none;
+  color: #acb628;
+  cursor: pointer;
+  width: 5px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .degradado{
+    display: none;
+  }
+
+  .poda{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .url_site {
+    padding: 0 !important;
+    text-align: center;
+  }
+   .navbar{
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #b5c2da;
+  }
+
+  .login_button {
+    background-color: #acb628;
+  }
+
+  .social_media{
+    padding-top: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .degradado,
+  .url_site {
+    display: none;
+  }
+
+  .center_items {
+    text-align: center;
+    justify-content: center;
+  }
+
+
+  .social_media {
+    padding-top: 40px;
+  }
+
+  .title_course h1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .form_section{
+    padding: 80px 15px !important;
+  }
+
+  .logos{
+    justify-content: space-around;
+  }
+
+  .logos img{
+    margin-left: 0 !important;
+  }
+}
+
+/** Form Page **/
+.img_colum {
+  position: relative;
+  background-image: url(../img/cacao3.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img_colum::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #00bf7299, transparent, #a8eb1299);
+  z-index: 1;
+}
+
+.logo {
+  height: 50px;
+}
+
+.form_section {
+  padding: 80px;
+  position: relative;
+}
+
+.form_title {
+  font-weight: 700;
+  font-family: 'PinotGrigio';
+}
+
+.btn-login {
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #462b2b;
+  color: #ffffff;
+  padding: 10px 45px;
+  border-radius: 30px;
+  transition: ease 0.5s;
+}
+
+.form-control {
+  border-radius: 50px;
+  height: 50px;
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none !important;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group label {
+  position: absolute;
+  color: #b7bfe3;
+}
+
+.inFocus {
+  border: 2px solid #acb628 !important;
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none !important;
+}
+
+.form-group label {
+  position: absolute;
+  display: block;
+  left: 0;
+  transform: translate(20%, 60%);
+  transition: all 0.3s ease;
+}
+
+.translate {
+  transform: translate(20%, -60%) !important;
+  font-size: 13px;
+  background-color: #ffffff;
+  padding: 10px;
+  color: #acb628 !important;
+}
+
+.btn-login:hover {
+  background-color: #acb628;
+  color: #ffffff;
+}
+
+.form-check-input {
+  width: 20px;
+  height: 20px;
+}
+.form-check-input:checked {
+  background-color: #acb628;
+  outline: none;
+  outline-width: 0;
+  box-shadow: none;
+}
+
+.register {
+  text-align: center;
+  display: block;
+  margin-top: 50px;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 991px) {
+  .img_colum {
+    display: none;
+  }
+}
